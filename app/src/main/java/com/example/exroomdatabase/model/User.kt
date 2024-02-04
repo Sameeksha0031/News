@@ -1,6 +1,5 @@
 package com.example.exroomdatabase.model
 
-import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -11,7 +10,6 @@ data class User(
     var fname : String,
     var lname : String,
     var age : Int,
-    @Embedded
     var address: ArrayList<Address>
 )
 data class Address(

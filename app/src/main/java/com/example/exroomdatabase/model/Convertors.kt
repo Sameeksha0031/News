@@ -7,8 +7,6 @@ import com.google.gson.reflect.TypeToken
 class Convertors {
     @TypeConverter
     fun fromArrayList(value : ArrayList<Address>) : String {
-
-        
         return Gson().toJson(value)
     }
 
